@@ -9,7 +9,7 @@ function pesquisar() {
   let resultados = "";
   let raca = "";
   let descricao = "";
-  let utilidades = "";
+  let utilizacao = "";
   let tags = "";
 
   campoPesquisa = campoPesquisa.toLowerCase();
@@ -27,10 +27,10 @@ function pesquisar() {
   for (let dado of dados) {
     raca = dado.raca.toLowerCase();
     descricao = dado.descricao.toLowerCase();
-    utilidades = dado.utilidades.toLowerCase();
+    utilizacao = dado.utilizacao.toLowerCase();
     tags = dado.tags.toLowerCase();
 
-    if (raca.includes(campoPesquisa) || descricao.includes(campoPesquisa) || utilidades.includes(campoPesquisa) || tags.includes(campoPesquisa))
+    if (raca.includes(campoPesquisa) || utilizacao.includes(campoPesquisa) || tags.includes(campoPesquisa))
       resultados += `
       <div class="item-resultado">
       <h2>
