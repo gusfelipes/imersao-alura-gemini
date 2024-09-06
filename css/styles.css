@@ -95,7 +95,23 @@ section button:hover {
   text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
-#resultados {
+.container-item-resultado {
+  display: flex; /* Transforma o contêiner em um flex container */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+.container-item-resultado p {
+  margin-left: 20px; /* Adiciona um espaçamento entre a imagem e o texto */
+}
+
+.item-resultado img {
+  width: 50px; /* Ajuste o valor para o tamanho desejado */
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover; /* Garante que a imagem preencha todo o espaço disponível */
+}
+
+#resultados-pesquisa {
   opacity: 0;
   transition: opacity 0.5s ease-in-out; /* Ajuste a duração e a função de transição conforme necessário */
 }
