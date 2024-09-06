@@ -4,104 +4,112 @@ let dados = [
     raca: "Labrador Retriever",
     descricao: "Cão de porte médio, pelagem curta e densa, muito inteligente e amigável.",
     utilidades: "Companhia, caça, trabalho de assistência, guia para cegos.",
+    link: "https://pt.wikipedia.org/wiki/Golden_retriever",
   },
   {
     imagem: "./img/pastor_aleman.jpg",
     raca: "Pastor Alemão",
-    descricao:
-      "Cão de porte grande, musculoso e inteligente, conhecido por sua lealdade e obediência.",
+    descricao: "Cão de porte grande, musculoso e inteligente, conhecido por sua lealdade e obediência.",
     utilidades: "Guarda, polícia, trabalho de busca e resgate, companhia.",
+    link: "https://pt.wikipedia.org/wiki/Pastor-alemão",
   },
   {
     imagem: "./img/golden_retriever.jpg",
     raca: "Golden Retriever",
     descricao: "Cão de porte médio, pelagem longa e dourada, extremamente amigável e paciente.",
     utilidades: "Companhia, caça, terapia, trabalho de assistência.",
+    link: "https://pt.wikipedia.org/wiki/Labrador_retriever",
   },
   {
     imagem: "./img/bulldog_frances.jpg",
     raca: "Bulldog Francês",
     descricao: "Cão de pequeno porte, musculoso e brincalhão, com focinho achatado.",
     utilidades: "Companhia, apartamento.",
+    link: "https://pt.wikipedia.org/wiki/Buldogue_francês",
   },
   {
     imagem: "./img/chihuahua.jpg",
     raca: "Chihuahua",
     descricao: "Cão de porte muito pequeno, alerta e vivaz, com grande personalidade.",
     utilidades: "Companhia.",
+    link: "https://pt.wikipedia.org/wiki/Chihuahua_(cão)",
   },
   {
     imagem: "./img/beagle.jpg",
     raca: "Beagle",
     descricao: "Cão de médio porte, pelagem curta e tricolor, conhecido por seu olfato apurado.",
     utilidades: "Caça, companhia.",
+    link: "https://pt.wikipedia.org/wiki/Beagle",
   },
   {
     raca: "Akita Inu",
-    descricao:
-      "Cão de porte grande, originário do Japão, conhecido por sua lealdade e independência.",
+    descricao: "Cão de porte grande, originário do Japão, conhecido por sua lealdade e independência.",
     imagem: "./img/akita_inu.jpg",
     utilidades: "Companhia, guarda.",
+    link: "https://pt.wikipedia.org/wiki/Akita_Inu",
   },
   {
     raca: "Bichon Frisé",
     descricao: "Cão de pequeno porte, com pelagem branca e encaracolada, alegre e brincalhão.",
     imagem: "./img/bichon_frise.jpg",
     utilidades: "Companhia.",
+    link: "https://pt.wikipedia.org/wiki/Bichon_frisé",
   },
   {
     raca: "Border Collie",
-    descricao:
-      "Cão de porte médio a grande, extremamente inteligente e energético, utilizado em atividades de pastoreio.",
+    descricao: "Cão de porte médio a grande, extremamente inteligente e energético, utilizado em atividades de pastoreio.",
     imagem: "./img/border_collie.jpg",
     utilidades: "Pastoreio, agility, obediência.",
+    link: "https://pt.wikipedia.org/wiki/Border_collie",
   },
   {
     raca: "Bulldog Inglês",
-    descricao:
-      "Cão de porte médio, musculoso e braquicefálico, conhecido por sua natureza calma e amigável.",
+    descricao: "Cão de porte médio, musculoso e braquicefálico, conhecido por sua natureza calma e amigável.",
     imagem: "./img/bulldog_ingles.jpg",
     utilidades: "Companhia.",
+    link: "https://pt.wikipedia.org/wiki/Buldogue",
   },
   {
     raca: "Corgi",
     descricao: "Cão de pequeno porte, com pernas curtas e corpo alongado, inteligente e ativo.",
     imagem: "./img/corgi.jpg",
     utilidades: "Companhia, agility.",
+    link: "https://pt.wikipedia.org/wiki/Welsh_corgi_pembroke",
   },
   {
     raca: "Dachshund",
-    descricao:
-      "Cão de pequeno porte, com corpo alongado e pernas curtas, conhecido por sua personalidade teimosa e corajosa.",
+    descricao: "Cão de pequeno porte, com corpo alongado e pernas curtas, conhecido por sua personalidade teimosa e corajosa.",
     imagem: "./img/dachshund.jpg",
     utilidades: "Companhia, caça.",
+    link: "https://pt.wikipedia.org/wiki/Dachshund",
   },
   {
     raca: "Husky Siberiano",
-    descricao:
-      "Cão de porte médio a grande, com pelagem espessa e olhos azuis, conhecido por sua resistência e energia.",
+    descricao: "Cão de porte médio a grande, com pelagem espessa e olhos azuis, conhecido por sua resistência e energia.",
     imagem: "./img/husky_siberiano.jpg",
     imagem: "./img/husky_siberiano.jpg",
     utilidades: "Corrida de trenó, companhia.",
+    link: "https://pt.wikipedia.org/wiki/Husky_siberiano",
   },
   {
     raca: "Poodle",
-    descricao:
-      "Cão de diversas variedades (padrão, anão e toy), inteligente, elegante e hipoalergênico.",
+    descricao: "Cão de diversas variedades (padrão, anão e toy), inteligente, elegante e hipoalergênico.",
     imagem: "./img/poodle.jpg",
     utilidades: "Companhia, show.",
+    link: "https://pt.wikipedia.org/wiki/Poodle",
   },
   {
     raca: "Rottweiler",
     descricao: "Cão de porte grande, forte e musculoso, utilizado como cão de guarda e trabalho.",
     imagem: "./img/rottweiler.jpg",
     utilidades: "Guarda, proteção.",
+    link: "https://pt.wikipedia.org/wiki/Rottweiler",
   },
   {
     raca: "Shih Tzu",
-    descricao:
-      "Cão de pequeno porte, com pelagem longa e sedosa, conhecido por sua natureza dócil e companheira.",
+    descricao: "Cão de pequeno porte, com pelagem longa e sedosa, conhecido por sua natureza dócil e companheira.",
     imagem: "./img/shih_tzu.jpg",
     utilidades: "Companhia.",
+    link: "https://pt.wikipedia.org/wiki/Shih_Tzu",
   },
 ];
