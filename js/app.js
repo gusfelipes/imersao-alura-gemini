@@ -2,6 +2,8 @@ function pesquisar() {
   const resultadosDiv = document.getElementById("resultados-pesquisa");
 
   let section = document.getElementById("resultados-pesquisa");
+  let sugestaoDiv = document.getElementById("campo-sugestao");
+
   let campoPesquisa = document.getElementById("campo-pesquisa").value;
 
   let resultados = "";
@@ -13,8 +15,12 @@ function pesquisar() {
   campoPesquisa = campoPesquisa.toLowerCase();
 
   if (!campoPesquisa) {
-    console.log(campoPesquisa);
-    section.innerHTML = "<p>Campo de pesquisa vazio</>";
+    resultadosDiv.style.opacity = 0;
+    resultadosDiv.style.display = "flex";
+    setTimeout(() => {
+      resultadosDiv.style.opacity = 1;
+    }, 10);
+    section.innerHTML = `<p>Campo de pesquisa vazio</>`;
     return;
   }
 
@@ -40,7 +46,17 @@ function pesquisar() {
   }
 
   if (!resultados) {
-    resultados = "<p>Nada foi encontrado</p>";
+    resultados = `
+        <div>
+          <h2>Não foi encontrado raça nenhuma com sua pesquisa.</h2>
+          <h3>Você pode adicionar sugestões de raças no campo abaixo</h3>
+        </div>
+        <div>
+          <input id="campo-sugerido" type="text" placeholder="Digite a raça de um cachorro sugerida" />
+          <button id="botao-sugerido" onclick="sugerir()">Sugerir</button>
+          <div id="campo-sugestao">
+          </div>
+        </div>`;
   }
 
   resultadosDiv.style.opacity = 0;
@@ -51,3 +67,34 @@ function pesquisar() {
 
   section.innerHTML = resultados;
 }
+
+const campoBusca = document.getElementById("campo-pesquisa");
+
+campoBusca.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    pesquisar();
+  }
+});
+
+function sugerir() {
+  let campoSugerido = document.getElementById("campo-sugerido").value;
+
+  campoSugeridoLowerCase = campoSugerido.toLowerCase();
+
+  if (!campoSugeridoLowerCase) {
+    console.log(campoSugeridoLowerCase);
+    sugestaoDiv.innerHTML = "<p>Campo sugerido vazio</>";
+    return;
+  } else {
+    sugestoes.push(campoSugeridoLowerCase);
+  }
+  console.log(sugestoes);
+}
+
+const campoSugestao = document.getElementById("campo-sugerido");
+
+campoBusca.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    sugerir();
+  }
+});

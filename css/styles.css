@@ -69,6 +69,12 @@ section button:hover {
   border-radius: 0.6rem; /* Borda arredondada */
 }
 
+.resultados-pesquisa p {
+  color: #0b132b;
+  font-size: 1.25rem;
+  letter-spacing: 0.2rem;
+}
+
 /* Estiliza cada item de resultado */
 .item-resultado {
   background: #fec448; /* Cor de fundo dos itens */
