@@ -2,13 +2,11 @@ function pesquisar() {
   const resultadosDiv = document.getElementById("resultados-pesquisa");
 
   let section = document.getElementById("resultados-pesquisa");
-  let sugestaoDiv = document.getElementById("campo-sugestao");
 
   let campoPesquisa = document.getElementById("campo-pesquisa").value;
 
   let resultados = "";
   let raca = "";
-  let descricao = "";
   let utilizacao = "";
   let tags = "";
 
@@ -26,11 +24,10 @@ function pesquisar() {
 
   for (let dado of dados) {
     raca = dado.raca.toLowerCase();
-    descricao = dado.descricao.toLowerCase();
     utilizacao = dado.utilizacao.toLowerCase();
     tags = dado.tags.toLowerCase();
 
-    if (raca.includes(campoPesquisa) || utilizacao.includes(campoPesquisa) || tags.includes(campoPesquisa))
+    if (raca.includes(campoPesquisa) || utilizacao.includes(campoPesquisa) || tags.includes(campoPesquisa) || campoPesquisa.includes("todos"))
       resultados += `
       <div class="item-resultado">
       <h2>
@@ -68,28 +65,5 @@ const campoBusca = document.getElementById("campo-pesquisa");
 campoBusca.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     pesquisar();
-  }
-});
-
-function sugerir() {
-  let campoSugerido = document.getElementById("campo-sugerido").value;
-
-  campoSugeridoLowerCase = campoSugerido.toLowerCase();
-
-  if (!campoSugeridoLowerCase) {
-    console.log(campoSugeridoLowerCase);
-    sugestaoDiv.innerHTML = "<p>Campo sugerido vazio</>";
-    return;
-  } else {
-    sugestoes.push(campoSugeridoLowerCase);
-  }
-  console.log(sugestoes);
-}
-
-const campoSugestao = document.getElementById("campo-sugerido");
-
-campoBusca.addEventListener("keypress", function (event) {
-  if (event.key === "Enter") {
-    sugerir();
   }
 });

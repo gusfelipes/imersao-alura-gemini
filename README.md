@@ -5,13 +5,14 @@ Código criado para a Imersão Dev com Google Gemini 2024
 
 **Descrição:**
 
-Esta aplicação web permite aos usuários pesquisar por raças de cachorros, exibindo informações como descrição, imagem e links para mais detalhes. Além disso, os usuários podem sugerir novas raças para serem adicionadas à base de dados.
+Esta aplicação web permite aos usuários pesquisar por raças de cachorros, exibindo informações como descrição, utilização, imagem e links para mais detalhes.
 
 **Funcionalidades:**
 
 * Pesquisa por palavras-chave em nome da raça, utilização e tags.
 * Exibição de resultados em uma interface intuitiva.
 * Aviso que a base de dados está sendo atualizada.
+* Aviso caso o campo pesquisa está vazio, além de poder utilizar a tecla **Enter** para ativar a pesquisa.
 
 **Tecnologias utilizadas:**
 
