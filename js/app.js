@@ -40,6 +40,7 @@ function pesquisar() {
           <img src="${dado.imagem}" alt="Imagem de ${dado.raca}">
           <p class="descricao-meta">${dado.descricao}</p>
           </div>
+          <p class="descricao-meta"><strong>Utilização:</strong> ${dado.utilizacao}</p>
           <a href="${dado.link}" target="_blank"
           >Mais Informações</a>
       </div>`;
