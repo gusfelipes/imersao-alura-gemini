@@ -1,1 +1,0 @@
-let sugestoes = [{ raca: "" }];

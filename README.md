@@ -9,9 +9,9 @@ Esta aplicação web permite aos usuários pesquisar por raças de cachorros, ex
 
 **Funcionalidades:**
 
-* Pesquisa por palavras-chave em nome da raça, descrição, utilidades e tags.
+* Pesquisa por palavras-chave em nome da raça, utilização e tags.
 * Exibição de resultados em uma interface intuitiva.
-* Sugestão de novas raças.
+* Aviso que a base de dados está sendo atualizada.
 
 **Tecnologias utilizadas:**
 
@@ -38,7 +38,6 @@ Contribuições são bem-vindas! Abra um pull request com suas alterações.
 **Observações:**
 
 * A base de dados de raças está armazenada no arquivo `dados.js`.
-* As sugestões de novas raças são armazenadas no arquivo `sugestoes.js`.
 
 **Autor:**
 

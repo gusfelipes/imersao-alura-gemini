@@ -49,13 +49,7 @@ function pesquisar() {
     resultados = `
         <div>
           <h2>Não foi encontrado raça nenhuma com sua pesquisa.</h2>
-          <h3>Você pode adicionar sugestões de raças no campo abaixo</h3>
-        </div>
-        <div>
-          <input id="campo-sugerido" type="text" placeholder="Digite a raça de um cachorro sugerida" />
-          <button id="botao-sugerido" onclick="sugerir()">Sugerir</button>
-          <div id="campo-sugestao">
-          </div>
+          <h3>Nossa base de dados está sendo atualizada semanalmente</h3>
         </div>`;
   }
 
